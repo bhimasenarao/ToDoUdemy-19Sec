@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624B118117EA94D8C0FBC641 /* Pods_ToDoUdemy_19Sec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4953F135A53F7F0DC816F42E /* Pods_ToDoUdemy_19Sec.framework */; };
 		E324AD281FE67568009B3EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E324AD271FE67568009B3EE4 /* AppDelegate.swift */; };
 		E324AD2A1FE67568009B3EE4 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E324AD291FE67568009B3EE4 /* ToDoListViewController.swift */; };
 		E324AD2D1FE67568009B3EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E324AD2B1FE67568009B3EE4 /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4953F135A53F7F0DC816F42E /* Pods_ToDoUdemy_19Sec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoUdemy_19Sec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69718C54F9BFF19E989EF952 /* Pods-ToDoUdemy-19Sec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoUdemy-19Sec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoUdemy-19Sec/Pods-ToDoUdemy-19Sec.debug.xcconfig"; sourceTree = "<group>"; };
+		B1E042AFB5BFE5C0B8E62B50 /* Pods-ToDoUdemy-19Sec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoUdemy-19Sec.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoUdemy-19Sec/Pods-ToDoUdemy-19Sec.release.xcconfig"; sourceTree = "<group>"; };
 		E324AD241FE67568009B3EE4 /* ToDoUdemy-19Sec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDoUdemy-19Sec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E324AD271FE67568009B3EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E324AD291FE67568009B3EE4 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624B118117EA94D8C0FBC641 /* Pods_ToDoUdemy_19Sec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BD045ABB5F2ADFE5FE9FC0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69718C54F9BFF19E989EF952 /* Pods-ToDoUdemy-19Sec.debug.xcconfig */,
+				B1E042AFB5BFE5C0B8E62B50 /* Pods-ToDoUdemy-19Sec.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		820909B3FB71D2DD60983B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4953F135A53F7F0DC816F42E /* Pods_ToDoUdemy_19Sec.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E324AD1B1FE67568009B3EE4 = {
 			isa = PBXGroup;
 			children = (
 				E324AD261FE67568009B3EE4 /* ToDoUdemy-19Sec */,
 				E324AD251FE67568009B3EE4 /* Products */,
+				6BD045ABB5F2ADFE5FE9FC0C /* Pods */,
+				820909B3FB71D2DD60983B41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E324AD361FE67568009B3EE4 /* Build configuration list for PBXNativeTarget "ToDoUdemy-19Sec" */;
 			buildPhases = (
+				EA50762D75641299537F77CE /* [CP] Check Pods Manifest.lock */,
 				E324AD201FE67568009B3EE4 /* Sources */,
 				E324AD211FE67568009B3EE4 /* Frameworks */,
 				E324AD221FE67568009B3EE4 /* Resources */,
+				8513AA62364A55DB63C4091D /* [CP] Embed Pods Frameworks */,
+				C333DE74ADB3917471EB7131 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8513AA62364A55DB63C4091D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToDoUdemy-19Sec/Pods-ToDoUdemy-19Sec-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoUdemy-19Sec/Pods-ToDoUdemy-19Sec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C333DE74ADB3917471EB7131 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoUdemy-19Sec/Pods-ToDoUdemy-19Sec-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA50762D75641299537F77CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoUdemy-19Sec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E324AD201FE67568009B3EE4 /* Sources */ = {
@@ -312,6 +395,7 @@
 		};
 		E324AD371FE67568009B3EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69718C54F9BFF19E989EF952 /* Pods-ToDoUdemy-19Sec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +411,7 @@
 		};
 		E324AD381FE67568009B3EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E042AFB5BFE5C0B8E62B50 /* Pods-ToDoUdemy-19Sec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
